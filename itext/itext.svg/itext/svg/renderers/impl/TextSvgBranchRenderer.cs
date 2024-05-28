@@ -262,8 +262,6 @@ namespace iText.Svg.Renderers.Impl {
                 String yRawValue = this.attributesAndStyles.Get(SvgConstants.Attributes.DY);
                 IList<String> xValuesList = SvgCssUtils.SplitValueList(xRawValue);
                 IList<String> yValuesList = SvgCssUtils.SplitValueList(yRawValue);
-                xMove = 0f;
-                yMove = 0f;
                 if (!xValuesList.IsEmpty()) {
                     xMove = CssDimensionParsingUtils.ParseAbsoluteLength(xValuesList[0]);
                 }
